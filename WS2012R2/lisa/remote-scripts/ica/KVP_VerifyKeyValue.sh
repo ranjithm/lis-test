@@ -102,7 +102,8 @@ uname -a | grep x86_64
 if [ $? -eq 0 ]; then
     msg="64 bit architecture was detected"
     LogMsg "$msg"
-    kvp_client="kvp_client64"
+    #kvp_client="kvp_client64"
+	kvp_client="kvp_client"
 else
     uname -a | grep i686
     if [ $? -eq 0 ]; then
